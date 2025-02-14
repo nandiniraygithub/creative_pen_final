@@ -302,6 +302,7 @@
 
 /* Pop-up Background */
 .popup {
+  z-index: 50;
   display: none;
   position: fixed;
   top: 50%;
