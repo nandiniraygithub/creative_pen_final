@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Pen - Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="icon" type="image/png" href="./assest/Logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="./assest/Logo.png" alt="Company Logo" class="logo-image">
+      <div class="logo-text">Creative Pen</div>
+  </div>
+  
+    
+    
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#who">About</a></li>
+        <li><a href="./contactus/index.html">Contact</a></li>
+        <li><a href="#carrier">Carrier</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Unleash Creativity with Book Publishing & Design Services</h1>
+      <p>Partner with Creative Pen for your next great children's book or digital publishing project. Our expert services make your vision a reality.</p>
+      <button >Work With Us</button>
+    </div>
+    <div class="animation-box"><div>
+  
+  </section>
+
+  <section id="services" class="sections">
+    <div class="services-grid">
+      <div id="course-book" class="service-box">
+      
+      <img src="./assest/cousre.jpg" alt="Course Book" style="width: 100%; border-radius: 10px;">
+      <h3 style="margin: 10px 0;">Course Book</h3>
+      <p style="font-size: 14px; color: #ffffff;">Comprehensive learning material for students.</p>
+      <button class="menu-btn" onclick="openMenuPopup()">📚 Sample</button>
+
+      <!-- First Pop-up: Course List -->
+      <div id="menu-popup" class="popup">  
+          <div class="popup-content">
+              <span class="close-btn" onclick="closeMenuPopup()">✖</span>
+              <h2>Sample of Books</h2>
+              <ul class="course-list">
+                  <li onclick="window.open('./Samples/Mathematics/Math 3-28-41.pdf', '_blank')">📚 Maths</li>
+                  <li onclick="window.open('./Samples/GK&Reasoning/Gk-1(Aquatic Animal).pdf', '_blank')">📚 GK</li>
+                  <li onclick="window.open('./Samples/Sanskrit work/Adobe Scan May 15, 2024.pdf', '_blank')">📚 Sanskrit</li>
+                  <li onclick="window.open('./Samples/Hindi/Hindi Class 5.pdf', '_blank')">📚 Hindi</li>
+              </ul>
+          </div>
+      </div>
+   
+  </div>
+
+    <div class="service-box">
+        <img src="./assest/workbook.jpg" alt="Workbook">
+        <button style="background: transparent; border: none;"><h3>Work Book</h3></button>
+        <p>Practice exercises to reinforce learning.</p>
+    </div>
+
+    <div class="service-box">
+        <img src="./assest/TestGenrator.png" alt="Test Generator">
+        <h3>Test Generator</h3>
+        <p>Create customized tests and quizzes.</p>
+    </div>
+
+    <div class="service-box">
+        <img src="./assest/LessonPlan.png" alt="Lesson Plan">
+        <h3>Lesson Plan</h3>
+        <p>Structured guides for effective teaching.</p>
+    </div>
+
+    <div class="service-box">
+        <img src="./assest/app.png" alt="Apps">
+        <h3>Apps</h3>
+        <p>Interactive tools for enhanced learning.</p>
+    </div>
+
+    <div class="service-box">
+        <img src="./assest/design.png" alt="Designing">
+        <h3>Designing</h3>
+        <p>Creative and educational content creation.</p>
+    </div>
+</div>
+
+  </section>
+
+  <section id="who" class="sections about-section">
+    <h2>Who We Are</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Creative Pen is a premier B2B firm committed to transforming educational content. Our expert team of authors and designers crafts high-quality school books, lesson plans, and worksheets tailored for publishers. We deliver captivating designs and professional publishing solutions to make every book visually appealing, engaging, and impactful.</p>
+        <div class="stats-container">
+          <div class="stat-item fade-in" style="--delay: 0.2s;">
+            <h3>500+</h3>
+            <p>Books Published</p>
+          </div>
+          <div class="stat-item fade-in" style="--delay: 0.4s;">
+            <h3>1000+</h3>
+            <p>Happy Authors</p>
+          </div>
+          <div class="stat-item fade-in" style="--delay: 0.6s;">
+            <h3>15+</h3>
+            <p>Years Experience</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-images">
+        <img src="./assest/book_design.jpg" alt="Book Design Process" class="slide-in" style="--delay: 0.3s;">
+        <img src="./assest/teamwork2.png" alt="Publishing Team" class="slide-in" style="--delay: 0.6s;">
+      </div>
+    </div>
+  </section>
+
+  <section class="map-container">
+    <h2>Our Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83977390183!2d77.06889973308233!3d28.527280343024325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1dffc102d8e5%3A0xe51c6f96f0c7edc0!2sDelhi%2C%20India!5e0!3m2!1sen!2sus!4v1697036740292!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Company Info with Logo -->
+      <div class="footer-info">
+        <div class="footer-logo-container">
+          <img src="./assest/Logo.png" alt="Creative Pen Logo" class="footer-logo">
+          <h3>Creative Pen</h3>
+        </div>
+        <p>We specialize in children's book design, illustrations, 2D animation edutainment videos, interactive eLearning lectures (Kindergarten to Grade 8), eLearning eBooks, digital flip books, and professional graphic design services.</p>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <a href="tel:+918383949540">+91 83839 49540</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:creativepenword@gmail.com">creativepenword@gmail.com</a>
+        </div>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61572350110217" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/creative_pn?igsh=YzljYTk1ODg3Zg==" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/creativepenword?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#who">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="/contactus/index.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Creative Pen. All Rights Reserved. | Designed by Creative Pen Team</p>
+    </div>
+  </footer>
+
+  <script>
+   function openMenuPopup() {
+      const popup = document.getElementById("menu-popup");
+      popup.style.display = "flex";
+    }
+
+    function closeMenuPopup() {
+      document.getElementById("menu-popup").style.display = "none";
+    }
+
+    // Close popup when clicking outside of popup content
+    window.onclick = function(event) {
+      const popup = document.getElementById("menu-popup");
+      if (event.target === popup) {
+        popup.style.display = "none";
+      }
+    }
+
+</script>
+</body>
+</html>

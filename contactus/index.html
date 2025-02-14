@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #a8afff, #1b709b); /* Light blue gradient */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            width: 800px;
+            max-width: 90%;
+        }
+        .form-container {
+            
+            width: 50%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input, textarea {
+            background: #e3f2fd;
+            color: #333;
+            border: 1px solid #90caf9;
+            outline: none;
+        }
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+        button {
+            background: linear-gradient(135deg, #2196f3, #1170bf);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s;
+        }
+        button:hover {
+            background: linear-gradient(135deg, #1e88e5, #42a5f5);
+            transform: scale(1.05);
+        }
+        .image-container {
+            width: 50%;
+            background: #f4f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .form-container, .image-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Contact us</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="1a53476a-4f2a-4f30-8e47-d6cd5bc539ef">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email address" required>
+                <textarea name="message" placeholder="Write your message for the team here" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="image.png" alt="Illustration"> <!-- Change this to your actual image -->
+        </div>
+    </div>
+</body>
+</html>
