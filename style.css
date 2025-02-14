@@ -775,6 +775,7 @@
   
     .service-box {
       padding: 1.5rem;
+      position: relative;
     }
 
     .animation-box {
@@ -785,3 +786,6 @@
       border-radius: 15px;
   }
   }
+
+
+  

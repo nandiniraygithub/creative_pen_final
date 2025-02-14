@@ -34,13 +34,26 @@
     <div class="hero-text">
       <h1>Unleash Creativity with Book Publishing & Design Services</h1>
       <p>Partner with Creative Pen for your next great children's book or digital publishing project. Our expert services make your vision a reality.</p>
-      <button >Work With Us</button>
+      <button ><a style="text-decoration: none; color: azure;" href="https://wa.me/918383949540">Work With Us</a></button>
     </div>
     <div class="animation-box"><div>
   
   </section>
 
   <section id="services" class="sections">
+    <div id="menu-popup" class="popup">
+      <div class="popup-content">
+          <span class="close-btn" onclick="closeMenuPopup()">✖</span>
+          <h2>Sample of Books</h2>
+          <ul class="course-list">
+              <li onclick="window.open('./Samples/Mathematics/Math 3-28-41.pdf', '_blank')">📚 Maths</li>
+              <li onclick="window.open('./Samples/GK&Reasoning/Gk-1(Aquatic Animal).pdf', '_blank')">📚 GK</li>
+              <li onclick="window.open('./Samples/Sanskrit work/Adobe Scan May 15, 2024.pdf', '_blank')">📚 Sanskrit</li>
+              <li onclick="window.open('./Samples/Hindi/Hindi Class 5.pdf', '_blank')">📚 Hindi</li>
+          </ul>
+      </div>
+  </div>
+  
     <div class="services-grid">
       <div id="course-book" class="service-box">
       
@@ -49,50 +62,41 @@
       <p style="font-size: 14px; color: #ffffff;">Comprehensive learning material for students.</p>
       <button class="menu-btn" onclick="openMenuPopup()">📚 Sample</button>
 
-      <!-- First Pop-up: Course List -->
-      <div id="menu-popup" class="popup">  
-          <div class="popup-content">
-              <span class="close-btn" onclick="closeMenuPopup()">✖</span>
-              <h2>Sample of Books</h2>
-              <ul class="course-list">
-                  <li onclick="window.open('./Samples/Mathematics/Math 3-28-41.pdf', '_blank')">📚 Maths</li>
-                  <li onclick="window.open('./Samples/GK&Reasoning/Gk-1(Aquatic Animal).pdf', '_blank')">📚 GK</li>
-                  <li onclick="window.open('./Samples/Sanskrit work/Adobe Scan May 15, 2024.pdf', '_blank')">📚 Sanskrit</li>
-                  <li onclick="window.open('./Samples/Hindi/Hindi Class 5.pdf', '_blank')">📚 Hindi</li>
-              </ul>
-          </div>
-      </div>
-   
   </div>
 
     <div class="service-box">
         <img src="./assest/workbook.jpg" alt="Workbook">
         <button style="background: transparent; border: none;"><h3>Work Book</h3></button>
         <p>Practice exercises to reinforce learning.</p>
+        <button class="menu-btn" onclick="openMenuPopup()">📚 Sample</button>
     </div>
 
     <div class="service-box">
         <img src="./assest/TestGenrator.png" alt="Test Generator">
         <h3>Test Generator</h3>
         <p>Create customized tests and quizzes.</p>
+        <button class="menu-btn" onclick="openMenuPopup()">📚 Sample</button>
     </div>
 
     <div class="service-box">
         <img src="./assest/LessonPlan.png" alt="Lesson Plan">
         <h3>Lesson Plan</h3>
         <p>Structured guides for effective teaching.</p>
+        <button class="menu-btn" onclick="openMenuPopup()">📚 Sample</button>
     </div>
 
     <div class="service-box">
         <img src="./assest/app.png" alt="Apps">
         <h3>Apps</h3>
         <p>Interactive tools for enhanced learning.</p>
+        <button class="menu-btn" onclick="openMenuPopup()">📚 Sample</button>
     </div>
 
     <div class="service-box">
         <img src="./assest/design.png" alt="Designing">
         <h3>Designing</h3>
         <p>Creative and educational content creation.</p>
+        <button class="menu-btn" onclick="openMenuPopup()">📚 Sample</button>
     </div>
 </div>
 
